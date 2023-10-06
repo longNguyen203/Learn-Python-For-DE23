@@ -5,5 +5,8 @@ def SQRT(x):
         return "Error"
     else:
         return math.sqrt(x)
+    
+def ABS(x):
+    return abs(x)
 
-print(SQRT(5))
+print(SQRT(5), ABS(-5))
