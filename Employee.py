@@ -1,3 +1,4 @@
+import requests
 
 class Employee:
     """A sample Employee class"""
@@ -18,10 +19,14 @@ class Employee:
         return "{} {}".format(self.first, self.last)
     
     def apply_raise(self):
-        self.pay = int(self.pay + self.raise_amt)
+        self.pay = int(self.pay * self.raise_amt)
         
-        
-        \
+    def monthly_schedule(self, month):
+        response = requests.get(f"http://company.com/{self.last}/{month}")
+        if response.ok:
+            return response.text
+        else:
+            return "Bad response!"
 
 
 
