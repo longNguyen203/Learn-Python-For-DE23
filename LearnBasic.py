@@ -116,4 +116,9 @@ mySet.update(mySet)
 for i in range(len(mySet)):
     print(mySet[i]) # set không có thứ tự nên không thể duyệt
 
+"""Sao chép list"""
+list1 = [1,2,3]
+print(list1)
+list2 = list1[:] 
+print(list2)
 
