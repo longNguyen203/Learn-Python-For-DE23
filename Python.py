@@ -9,4 +9,7 @@ def SQRT(x):
 def ABS(x):
     return abs(x)
 
-print(SQRT(5), ABS(-5))
+# print(SQRT(5), ABS(-5))
+
+def square(x: float) -> float:
+    pass
